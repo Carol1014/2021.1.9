@@ -1,0 +1,9 @@
+**Additional Critical Vulnerabilities:**
+- NULL pointer dereference - `CWE-476`
+  Example: `if (ptr != NULL) { *ptr = value; } // Race condition`
+- Untrusted search path - `CWE-426`
+  Example: `system("editor file.txt"); // Uses PATH environment`
+- Error message containing sensitive information - `CWE-209`
+  Example: `printf("Login failed for user %s with password %s", username, password);`
+- Use of hard-coded credentials - `CWE-798`
+  Example: `char* db_password = "production_db_password";`
